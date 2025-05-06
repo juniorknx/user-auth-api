@@ -27,3 +27,28 @@ API RESTful construída com **NestJS**, **Prisma ORM** e **PostgreSQL** para ger
 ```bash
 git clone https://github.com/seu-usuario/nome-do-repositorio.git
 cd nome-do-repositorio
+
+
+📚 Rotas da API
+As rotas com 🔒 requerem token JWT no header Authorization: Bearer <token>
+
+🔐 Autenticação
+POST /auth/login
+Realiza login do usuário e retorna o token JWT
+
+👤 Usuários
+GET /users 🔒
+Lista todos os usuários
+
+POST /users
+Cria um novo usuário
+
+PUT /users/:id
+Atualiza os dados de um usuário
+
+DELETE /users/:id 🔒
+Remove um usuário pelo ID
+
+🏠 Endereços
+PUT /users/:userId/addresses/:addressId
+Atualiza um endereço associado a um usuário
